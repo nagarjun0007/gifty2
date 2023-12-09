@@ -13,7 +13,14 @@ const url =
   "mongodb+srv://gifty_ale_nag:gifty@cluster0.oxzsh26.mongodb.net/Gifty_DB?retryWrites=true&w=majority";
 // provide mondodb database_name:password
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [""],
+    methods: ["POST", "GET"],
+    credentials: true,
+  })
+);
+
 app.use(bodyParser.json());
 app.use((error, req, res, next) => {
   if (res.headerSent) {
