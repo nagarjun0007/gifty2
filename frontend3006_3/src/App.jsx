@@ -28,7 +28,7 @@ function App() {
   const [auth, setAuth] = useState("");
   const [active, setActive] = useState("Profile");
   // axios.defaults.baseURL = "https://gifty-backend.onrender.com/api";
-  axios.defaults.baseURL = "http://localhost:3001/api/";
+  axios.defaults.baseURL = "http://localhost:3001/api/"; // api for frontend
 
   function updateUserDetails(userData) {
     setUserDetails(userData);
