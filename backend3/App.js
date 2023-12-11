@@ -8,7 +8,7 @@ const cors = require("cors");
 require("dotenv").config();
 const app = express();
 
-const port = 3001;
+const port = 3002;
 const url =
   "mongodb+srv://gifty_ale_nag:gifty@cluster0.oxzsh26.mongodb.net/Gifty_DB?retryWrites=true&w=majority";
 // provide mondodb database_name:password
