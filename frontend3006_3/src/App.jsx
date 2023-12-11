@@ -27,7 +27,8 @@ function App() {
   const [products, setProducts] = useState([]);
   const [auth, setAuth] = useState("");
   const [active, setActive] = useState("Profile");
-  axios.defaults.baseURL = "https://gifty-backend.onrender.com/api"; // api for backend connect
+
+  axios.defaults.baseURL = "https://gifty-backend-468d.onrender.com/api"; // api for backend connect
   // axios.defaults.baseURL = "http://localhost:3001/api/"; // api for frontend local
   // axios.defaults.baseURL =
   //   "https://gifty2-gbn1egha3-nagarjun-reddys-projects.vercel.app/"; // api for frontend on vercel
